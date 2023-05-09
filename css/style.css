@@ -1,5 +1,5 @@
 header {
-  background-color: grey;
+  background-color: rgb(172, 160, 160);
   margin: 0;
   padding: 0;
   top: 0;
@@ -16,8 +16,9 @@ body {
 #logo {
   display: flex;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 10px;
-  padding: 10px;
+  margin: 0;
+  padding: 8px;
+ 
 
 }
 
@@ -140,45 +141,120 @@ p {
 
 
 }
+
+
+/*Aqui fica a responsividade*/
 @media (max-width: 768px) {
   header {
-    position: fixed;
+    position:reletive;
   }
-  
   nav {
-    display: none;
+    display: flex;
+    justify-content: end;
+    margin: 1px;  
+  
   }
   
-  .social-icons {
-    display: none;
+  
+  li {
+    display: inline;
   }
   
-  #logo {
-    margin: 10px auto;
-    text-align: center;
+  a {
+    margin: 5px;
+    display: inline;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(239, 232, 239);
+    font-size: 10px;
+    transition: 0.6s;
+  
   }
   
-  .container {
-    display: block;
+  a:hover {
+    color: rgb(39, 37, 37);
+  
   }
   
-  .block {
-    flex-basis: 100%;
-    height: auto;
-  }
   
+  /* Define o estilo da imagem */
   .container-img img {
-    width: 100%;
+    opacity: 0.6;
+    margin: 0;
+    width: 1200;
+    padding: 10px;
   }
   
+  /* Define o estilo do texto */
   .container-img .text {
-    font-size: 30px;
+    position: absolute;
+    color: rgb(53, 50, 50);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+  
+  }
+  
+  
+  
+  button {
+    display: inline;
+    justify-content: space-between;
+    border-radius: 7px;
+    background-color: gray;
+    margin: 35px;
+    padding: 30px;
+    border-style: none;
+    box-shadow: "";
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: 0 0 4px 4px gray;
+    color: white;
   }
   
   footer {
-    text-align: center;
+    background-color: black;
+  
   }
-}
-
-
-
+ 
+  
+ 
+  p {   
+    color: #ffff;
+    font-size: 8px;
+    margin:3px;
+  
+  }
+  
+  .rodape-info {
+    display: inline;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  .block {
+    flex-basis: calc(33.33% - 20px);
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    border-radius: 7px;
+    box-shadow:0 0 3px 3px rgba(0, 0, 0, 0.365);  
+  }}
