@@ -140,5 +140,45 @@ p {
 
 
 }
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+  }
+  
+  nav {
+    display: none;
+  }
+  
+  .social-icons {
+    display: none;
+  }
+  
+  #logo {
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .container {
+    display: block;
+  }
+  
+  .block {
+    flex-basis: 100%;
+    height: auto;
+  }
+  
+  .container-img img {
+    width: 100%;
+  }
+  
+  .container-img .text {
+    font-size: 30px;
+  }
+  
+  footer {
+    text-align: center;
+  }
+}
+
 
 
